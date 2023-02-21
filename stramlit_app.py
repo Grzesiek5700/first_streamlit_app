@@ -19,6 +19,7 @@ fruits_to_show = my_fruit_list.loc[fruit_selected]
 
 df = st.dataframe(fruits_to_show)
 
+st.header("Fruityvice Fruit Advice!")
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 st.text(fruityvice_response)
